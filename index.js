@@ -37,5 +37,17 @@ class Adventurer extends Character {
         this.role = role;
 
         this.inventory.push("bedroll", "50 gold coins");
-}
+       }  
+
+       scout () {
+        console.log(`${this.name} is scouting ahead`);
+        super.roll();
+       }
+    }
+class Companion {
+    constructor (name) {
+this.name = Frank;
+this.health = 100;
+this.inventory = ["hat", "sunglasses"];
+    }
 }
